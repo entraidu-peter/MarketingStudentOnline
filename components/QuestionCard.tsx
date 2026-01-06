@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Question, OptionExplanations, QuestionOptions } from '../types';
+import { Question, OptionExplanations, QuestionOptions } from '../types.ts';
 
 interface QuestionCardProps {
   question: Question;
