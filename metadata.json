@@ -1,0 +1,7 @@
+{
+  "name": "Marketing Meester MC Quiz",
+  "description": "Een interactieve multiple-choice quiz tool voor marketingstudenten met gedetailleerde feedback en een AI-tutor voor extra uitleg.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
