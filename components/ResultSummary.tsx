@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { UserAnswer } from '../types';
+import { UserAnswer } from '../types.ts';
 
 interface ResultSummaryProps {
   answers: UserAnswer[];
@@ -12,8 +12,6 @@ const ResultSummary: React.FC<ResultSummaryProps> = ({ answers, totalQuestions, 
   const correctCount = answers.filter(a => a.isCorrect).length;
   
   // Grade calculation with guessing correction (gokkanscorrectie)
-  // Formula: 1 + 9 * (Correct - Guess) / (Total - Guess)
-  // For 4 options, Guess = Total / 4
   const guessFactor = totalQuestions / 4;
   let grade = 1.0;
   
